@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-dib31vaw(mz#!s%644p^42=&z(2px2$-6=d&kf4-t5u+mr$g!6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Learninglog-final.herokuapp.com']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -145,7 +145,7 @@ BOOTSTRAP3 = {
 # Heroku settings
 cwd = os.getcwd()
 if cwd == '/app' or cwd[:4] == '/tmp':
-    import dj_database_url
+    import dj_database_url # type: ignore
     DATABASES = {
         'default': dj_database_url.config(default='postgres://localhost')
     }
