@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-dib31vaw(mz#!s%644p^42=&z(2px2$-6=d&kf4-t5u+mr$g!6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['Learninglog-final.herokuapp.com']
 
 
 # Application definition
@@ -135,6 +135,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # My settings
 LOGIN_URL = '/users/login/'
+LOGOUT_REDIRECT_URL = '/users/logout/'
 
 # Settings for django-bootstrap3
 BOOTSTRAP3 = {

@@ -1,14 +1,15 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
-def logout_view(request):
-    """Log the user out."""
-    logout(request)
-    return HttpResponseRedirect(reverse('Learninglogs:index'))
+# def logout_view(request):
+#     """Log the user out."""
+#     logout(request)
+#     return redirect('users/logout')
+     
 
 def register(request):
     """Register a new user."""
