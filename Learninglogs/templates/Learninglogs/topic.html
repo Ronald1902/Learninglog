@@ -7,7 +7,7 @@
 {% block content %}
 
     <p>
-        <a href="{% url 'Learninglogs:new_entry' topic.id %}">add new entry</a>
+        <a href="{% url 'Learninglogs:new_entry' topic.id %}">ADD NEW ENTRY</a>
     </p>
     
     {% for entry in entries %}
@@ -17,7 +17,7 @@
                 {{ entry.date_added|date:'M d, Y H:i' }}
                 <small>
                     <a href="{% url 'Learninglogs:edit_entry' entry.id %}">
-                        Edit entry
+                        EDIT ENTRY
                     </a>
                 </small>
             </h3>
