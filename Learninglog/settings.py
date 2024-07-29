@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-dib31vaw(mz#!s%644p^42=&z(2px2$-6=d&kf4-t5u+mr$g!6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -143,23 +143,23 @@ BOOTSTRAP3 = {
 }
 
 # Heroku settings
-cwd = os.getcwd()
-if cwd == '/app' or cwd[:4] == '/tmp':
-    import dj_database_url # type: ignore
-    DATABASES = {
-        'default': dj_database_url.config(default='postgres://localhost')
-    }
+#cwd = os.getcwd()
+#if cwd == '/app' or cwd[:4] == '/tmp':
+    #import dj_database_url # type: ignore
+    #DATABASES = {
+    #    'default': dj_database_url.config(default='postgres://localhost')
+    #}
 
     # Honor the 'X-Forwarded-Proto' header for request.is_secure().
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    #SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # Only allow heroku to host the project.
-    ALLOWED_HOSTS = ['Learninglog-final.herokuapp.com']
-    DEBUG = False
+    #ALLOWED_HOSTS = ['Learninglog-final.herokuapp.com']
+    #DEBUG = False
 
     # Static asset configuration
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    STATIC_ROOT = 'staticfiles'
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'static'),
-    )
+    #BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    #STATIC_ROOT = 'staticfiles'
+    #STATICFILES_DIRS = (
+        #os.path.join(BASE_DIR, 'static'),
+    #)
