@@ -1,8 +1,8 @@
 databases:
-  - name: PostgreSQL
+  - name: postgresql
     plan: free
-    databaseName: PostgreSQL
-    user: PostgreSQL
+    databaseName: Learninglogdb
+    user: Ronald
 
 services:
   - type: web
