@@ -11,6 +11,7 @@ click==8.1.7
 contourpy==1.2.1
 cookiecutter==2.6.0
 cycler==0.12.1
+django-bootstrap3==6.2.2
 distlib==0.3.8
 dj-database-url==2.2.0
 Django==4.2.13
