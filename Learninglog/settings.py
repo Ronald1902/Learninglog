@@ -173,5 +173,5 @@ STATICFILES_DIRS = (
     #DEBUG = False
 
     # Static asset configuration
-    ,
+    
     #)
