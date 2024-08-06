@@ -151,6 +151,12 @@ BOOTSTRAP3 = {
     'include_jquery': True,
 }
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    STATIC_ROOT = 'staticfiles'
+    STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, 'static')
+    )
+
 # Heroku settings
 #cwd = os.getcwd()
 #if cwd == '/app' or cwd[:4] == '/tmp':
@@ -167,8 +173,5 @@ BOOTSTRAP3 = {
     #DEBUG = False
 
     # Static asset configuration
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    STATIC_ROOT = 'staticfiles'
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'static'),
+    ,
     #)
