@@ -1,7 +1,7 @@
 databases:
-  - name: postgresql
+  - name: Learninglogdb
     plan: free
-    databaseName: postgredb
+    databaseName: postgresql
     user: postgre
 
 services:
